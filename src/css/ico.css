@@ -1,0 +1,12 @@
+.app-icon {
+	//<div class="app-icon"></div>
+	width: 400px;
+	height: 100px;
+	background-color: #0d0d0d;
+	//position: absolute;
+}
+
+path {
+	//stroke: #0d0d0d;
+	transition: fill 250ms;
+}

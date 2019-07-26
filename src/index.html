@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./css/ico.css">
+  </head>
+  <body>
+
+    <div class="app-icon"></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+    <script src="./js/ico.js"></script>
+
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <br>Current version: v<span id="version">X.Y.Z</span>
+    <br>Updates: <div id="messages"></div>
+    <script>
+      const {app, ipcRenderer} = require('electron')
+      // Display the current version
+      document.getElementById('version').innerText = require('electron').remote.app.getVersion();
+      // Listen for messages
+      ipcRenderer.on('message', function(event, text) {
+        var container = document.getElementById('messages');
+        var message = document.createElement('div');
+        message.innerHTML = text;
+        container.appendChild(message);
+      })
+  </script>
+  </body>
+</html>
