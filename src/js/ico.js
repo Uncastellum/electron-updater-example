@@ -12,13 +12,26 @@ const arcAnimDelay = 150
 const arcAnimDur = 3000
 
 // append svg
-let svg = d3.select('.app-icon').append('svg')
+let svg = d3.selectAll('.app-icon').append('svg')
   .attr({
     'width': width,
     'height': height,
     'class': 'pieChart'
   })
   .append('g')
+/*let svg = d3.selectAll('.app-icon').append('svg')
+  .each(function(d, i) {
+    d3.select(this)
+      //.attr('width', width)
+      //.attr('height', height)
+      //.attr('class', 'pieChart')
+      .attr({
+        'width': width,
+        'height': height,
+        'class': 'pieChart'
+      })
+})
+  .append('g')*/
 
 svg.attr({
   'transform': `translate(${width / 2}, ${height / 2})`

@@ -1,0 +1,29 @@
+#title-bar {
+  background-color: #1c1c1c;
+  -webkit-app-region: drag;
+  list-style-type: none;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0;
+  margin: 0;
+  height: 25px;
+  position: fixed;
+  width: auto;
+}
+
+#title-bar.setRight {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+    #title-bar li{
+      -webkit-app-region: no-drag;
+      cursor: pointer;
+      transition: color 0.2s;
+      list-style: none;
+      margin: 0 5px 0 5px;
+      font-size: 0.9em;
+      position: relative;
+      top: 3px;
+    }

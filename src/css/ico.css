@@ -6,6 +6,9 @@
 	//position: absolute;
 }
 
+.app-icon:optional {
+}
+
 path {
 	//stroke: #0d0d0d;
 	transition: fill 250ms;

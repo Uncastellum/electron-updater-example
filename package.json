@@ -3,12 +3,25 @@
   "version": "0.0.101",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . --asar --ignore package-lock* --ignore ./builds --out ./builds --overwrite",
+    "installer": "node ./builds/installer.js"
   },
   "devDependencies": {
-    "electron": "^5.0.8"
+    "electron": "^5.0.8",
+    "electron-winstaller": "^4.0.0"
   },
   "dependencies": {
-    "electron-updater": "^4.1.2"
+    "electron-updater": "^4.1.2",
+    "npm": "^6.11.2"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Uncastellum",
+        "repo": "electron-updater-example"
+      }
+    ]
   }
 }
