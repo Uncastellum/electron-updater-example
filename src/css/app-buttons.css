@@ -9,21 +9,41 @@
   padding: 0;
   margin: 0;
   height: 25px;
-  position: fixed;
   width: auto;
+  position: fixed;
 }
 
 #title-bar.setRight {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+  #title-bar ul{
+    margin: 0; padding: 0;
+    height: 100%;
+    /*margin-right: 0px;*/
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #title-bar.setRight ul{
+    margin-right: 0;
+  }
+
     #title-bar li{
       -webkit-app-region: no-drag;
       cursor: pointer;
       transition: color 0.2s;
       list-style: none;
-      margin: 0 5px 0 5px;
+      /*margin: 0 5px 0 5px;*/
       font-size: 0.9em;
       position: relative;
-      top: 3px;
+      height: auto;
+      width: 25px;
+      color: #DBDBDB;
+    }
+
+    #minimize:hover, #maximize:hover {
+      background-color: #404040;
+    }
+    #close:hover {
+      background-color: #F22E2E;
     }

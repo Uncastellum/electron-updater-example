@@ -9,6 +9,15 @@
 .app-icon:optional {
 }
 
+.center{
+	margin: 0;
+	position: relative;
+	top: 50%;
+  left: 50%;
+  /*-ms-transform: translate(-50%, -50%);*/
+  transform: translate(-50%, -50%);
+}
+
 path {
 	//stroke: #0d0d0d;
 	transition: fill 250ms;
