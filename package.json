@@ -1,12 +1,12 @@
 {
   "name": "NCS-Station",
-  "version": "0.0.102",
+  "version": "0.0.104",
   "main": "src/main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . --asar --ignore package-lock* --ignore ./builds --out ./builds --overwrite",
     "installer": "node ./builds/installer.js",
-    "publish": "./build/publish.sh"
+    "publish": "bash ./builds/publish.sh -m \"\""
   },
   "devDependencies": {
     "electron": "^5.0.8",
@@ -15,5 +15,5 @@
   "dependencies": {
     "electron-updater": "^4.1.2",
     "npm": "^6.11.3"
-  },
+  }
 }

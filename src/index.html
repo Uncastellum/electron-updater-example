@@ -17,25 +17,28 @@
       </ul>
     </div>
 
-    <br/><br/>
+    <div>
 
-    <div class="app-icon"></div>
-    <div class="app-icon" style="height: 300px;"></div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
-    <script src="./js/ico.js"></script>
+      <br/><br/>
 
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>. :)
+      <div class="app-icon"></div>
+      <div class="app-icon" style="height: 300px;"></div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js'></script>
+      <script src="./js/ico.js"></script>
 
-    <br>Current version: v<span id="version">X.Y.Z</span>
+      We are using node <script>document.write(process.versions.node)</script>,
+      Chrome <script>document.write(process.versions.chrome)</script>,
+      and Electron <script>document.write(process.versions.electron)</script>. :)
 
-    <br><button onclick="">Check</button>
-    <br><button>Install</button>
+      <br>Current version: v<span id="version">X.Y.Z</span>
+
+      <br><button onclick="">Check</button>
+      <br><button>Install</button>
 
 
-    <br>Updates: <div id="messages"></div>
+      <br>Updates: <div id="messages"></div>
 
+    </div>
 
     <script>
       const {app} = require('electron');

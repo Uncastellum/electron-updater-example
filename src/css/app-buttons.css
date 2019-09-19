@@ -1,20 +1,19 @@
-/*
-/* width
+
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Handle *
+/* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;
 }
 
-/* Handle on hover *
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
-*/
 
 
 #title-bar {

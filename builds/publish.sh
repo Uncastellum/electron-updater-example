@@ -2,13 +2,11 @@
 
 log="./builds/$(date +%Y%m%d-%H.%M).log"
 
-if
-
 #version=$2
-if [ "$1" == "-m" ];then
+if [ "$1" == "-m" ]; then
   version=$(cat package.json | python -c "import sys, json; print(json.load(sys.stdin)['version'])")
   text=$2
-elif [ "$1" == "-v" ];then
+elif [ "$1" == "-v" ]; then
   version=$2
   text=$3
 else
