@@ -1,3 +1,22 @@
+/*
+/* width
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle *
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover *
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+*/
+
+
 #title-bar {
   background-color: #1c1c1c;
   -webkit-app-region: drag;

@@ -1,2 +1,4 @@
 node_modules
 builds
+!builds/installer.js
+!builds/publish.sh
